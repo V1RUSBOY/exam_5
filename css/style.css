@@ -65,8 +65,10 @@ body{
 .main-nav ul li a:active{
 	background: #e8645a;
 	border-radius: 5px;
-	border-top: 3px solid #e2534b;
-	border-bottom: none;
+	-webkit-box-shadow: inset 0px 3px 15px 0px rgba(226, 83, 75, 1);
+	-moz-box-shadow:    inset 0px 3px 15px 0px rgba(226, 83, 75, 1);
+	box-shadow:         inset 0px 3px 15px 0px rgba(226, 83, 75, 1);
+	padding: 7px 20px;
 }
 
 .header .ruler{
@@ -184,7 +186,14 @@ body{
 	text-transform: uppercase;
 	margin: 24px 10px 0px 0px;
 }
-
+.info-block a:active{
+	background: #e8645a;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0px 3px 15px 0px rgba(226, 83, 75, 1);
+	-moz-box-shadow:    inset 0px 3px 15px 0px rgba(226, 83, 75, 1);
+	box-shadow:         inset 0px 3px 15px 0px rgba(226, 83, 75, 1);
+	padding: 14px 42px;
+}
 
 
 
@@ -247,6 +256,7 @@ body{
 .content-block{
 	background: #ececec;
 	position: relative;
+	padding: 0 0 60px 0;
 }
 .content-block .ruler{
 	position: absolute;
@@ -271,11 +281,75 @@ body{
 	margin: 0px 0px 0px 4px;
 	word-spacing: -1px;
 }
-
-
-
-
-
+.info-boxes{
+	vertical-align: top;
+	width: 25%;
+	display: inline-block;
+	margin: 38px 8px 15px 0;
+}
+.info-boxes:last-child{
+	margin-right: 0;
+}
+.info-boxes h4{
+	color: #7f8c8c;
+	font-size: 16px;
+	font-weight: 800;
+}
+.services-block ul{
+	list-style: none;
+	padding: 0;
+	margin: 33px 0 0 0;
+}
+.services-block li{
+	margin: 10px 0 0 0;
+}
+.services-block li:before{
+	content: "\68";
+	display: inline-block;
+	margin: 0 11px 0 0;
+}
+.data-block{
+	width: 48%;
+}
+.data-block p{
+	margin: 30px 0 0 0;
+	line-height: 25px;
+}
+.data-block a{
+	color: #e1524b;
+}
+.reviews-block{
+	padding: 0 0 0 23px;
+}
+.reviews-block p{
+	background: #f8f8f8;
+	border-radius: 5px;
+	padding: 11px 2px 14px 18px;
+	line-height: 24px;
+	font-style: italic;
+	position: relative;
+	margin: 0 0 0 0;
+}
+.reviews-block p:after{
+	content: "";
+	position: absolute;
+	bottom: -24px;
+	left: 22px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 24px 24px 0;
+	border-color: transparent #f8f8f8 transparent transparent;
+}
+.reviews-block span{
+	font-style: normal;
+}
+.reviews-block .client{
+	font-size: 16px;
+	font-weight: 600;
+	display: inline-block;
+	margin: 7px 0 0 61px;
+}
 .before-footer{
 	background: #76c7c0;
 	position: relative;
@@ -290,20 +364,123 @@ body{
 }
 
 .communic-blocks{
-	width: 33.33%;
-	margin: 0 16px;
+	width: 32%;
+	margin: 38px 12px 0 0;
 	display: inline-block;
+	vertical-align: top;
+}
+.communic-blocks p{
+	color: #fff;
+}
+.communic-blocks:last-child{
+	margin-right: 0;
+}
+.communic-blocks h4{
+	/*color: rgba(0,0,0.5); в фотошопе цвет задан таким образом,
+	но так как, так нельзя, пришлось взять цвет просто пипеткой*/
+	color: #4b7e79;
+	margin: 0;
+}
+.bl-1 h4{
+	font-size: 30px;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin: 0 0 0 4px;
+}
+.bl-1 .another{
+	font-size: 25px;
+	text-transform: none;
+	font-weight: normal;
+	margin: 0 0 0 3px;
+}
+.bl-1 p{
+	margin: 19px 0 0 6px;
+	line-height: 23px;
+	word-spacing: -1px;
+}
+.link-bl{
+	display: inline-block;
+	margin: 25px 0 0 6px;
+}
+.link-bl p{
+	margin: 0 0 7px 0;		
+}
+.link-info{
+	display: inline-block;
+	font-style: italic; 
+	font-size: 20px;
+	margin: 0 0 0 8px;
+}
+.link-info a{
+	color: #fff;
+	text-decoration: none;
+}
+.link-info a:hover{
+	color: #ddd;
+}
+.bl-2{
+	padding: 8px 0 0 113px;	
+}
+.bl-2 h4{
+	font-size: 20px;
+	font-weight: 600;
+}
+.bl-2 ul{
+	padding: 0;
+	margin: 27px 0 0 0;
+	list-style: none;
+}
+.bl-2 ul li:before{
+	content: "\69";
+	margin: 0 12px 0 0;
+}
+.bl-2 ul li{
+	margin: 7px 0 0 0;
+	color: #fff;
+}
+.bl-3{
+	padding: 8px 0 0 21px;
+	vertical-align: top;
+}
+.bl-3 h4{
+	font-style: italic;
+	font-size: 20px;
+	margin: 0 0 23px 0;
+}
+.bl-3 .another{
+	font-style: normal;
+	text-transform: uppercase;
 }
 
-
-
-
-
-
-
-
-
+.bl-3__mini-bl{
+	margin: 20px 0;
+	vertical-align: top;
+}
+.bl-3__mini-bl img{
+	border-radius: 5px;
+	float: left;
+}
+.mini-bl__text-bl{
+	display: inline-block;
+	width: 260px;
+	margin: 0 0 0 3px;
+	word-spacing: -1px;
+	line-height: 17px;
+}
+.mini-bl__text-bl p{
+	margin: 0 0 0 14px;
+	
+}
+.mini-bl__text-bl .date{
+	color: #4b7e79;
+	margin-top: 5px;
+}
 
 .footer{
 	background: #dadada;
+	height: 47px;
+	margin: -13px 0 0 0;
+}
+.footer p{
+	padding: 8px 0 0 5px;
 }
