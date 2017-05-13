@@ -1,5 +1,149 @@
-@media screen and (max-width: px){
+@media screen and (max-width: 1190px){
+	.slider-content{
+		left: 28%;
+	}
+	.flex-b{
+		margin: 4% 5%;
+		width: 40%;
+	}
+	.data-block{
+		width: 40%;
+	}
+}
+@media screen and (max-width: 1125px){
+	.bl-2{
+		width: 18%;
+		padding-left: 2%;
+	}
+	.bl-3{
+		width: 38%;
+	}
+}
+@media screen and (max-width: 1010px){
+	.menu-btn{
+		display: block;
+		width: 70px;
+		height: 70px;
+		float: right;
+		background: #76c7c0;
+		position: relative;
+		cursor: pointer;
+	}
+	.menu-btn span{
+		width: 18px;
+		height: 2px;
+		background: #fff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -1px 0 0 -9px;
+	}
+	.menu-btn span::before,.menu-btn span::after{
+		content: "";
+		width: 18px;
+		height: 2px;
+		background: #fff;
+		position: absolute;
+		left: 0;
+		transition: transform 1s;
+	}
+	.menu-btn span::before{
+		top: -5px;
+	}
+	.menu-btn span::after{
+		bottom: -5px;
+	}
+	.menu-btn.is-active span{
+		background: transparent;
+	}
+	.menu-btn.is-active span::before{
+		transform: rotate(45deg);
+		top: 0;
+	}
+	.menu-btn.is-active span::after{
+		transform: rotate(-45deg);
+		bottom: 0;
+	}
+	.menu{
+		display: none;
+		width: 200px;
+		background: #76c7c0 url(../img/ruler.png) 0px 0px repeat-x;
+		position: absolute;
+		right: 0;
+		top: 39px;
+		z-index: 10000;
+		padding: 0;
+	}
+	.menu ul{
+		margin: 0;
+		padding: 8px 15px;
+		list-style: none;
+		text-align: right;
 
+	}
+	.menu li a{
+		display: block;
+		padding: 15px;
+		text-decoration: none;
+		text-transform: uppercase;	
+		color: #f26c4f;
 
+	}
+	.menu ul li a:hover{
+		background: transparent;
+		border: none;
+	}	
 	
+}
+@media screen and (max-width: 950px){
+	.slider-content{
+		top: 15%;
+		left: 15%;
+	}
+	.communic-blocks{
+		/*text-align: center;*/
+		width: 85%;
+		margin: 1% 5%;
+	}
+	.bl-3__mini-bl img{
+		margin: 0 0 0 5%;
+	}
+	.mini-bl__text-bl{
+		width: 370px;
+	}
+	.reviews-block{
+		width: 80%;
+	}
+	.services-block{
+		width: 45%;
+	}
+}
+@media screen and (max-width: 650px){
+	.slider-content{
+		top: 10%;
+		left: 10%;
+	}
+	.flex-b{
+		width: 85%;
+		margin: 4% 6%;
+	}
+	.flex-b .link{
+		left: 34%;
+	}
+	.info-block p{
+		display: block;
+	}
+}
+@media screen and (max-width: 500px){
+	.slider-content{
+		top: 5%;
+		left: 1%;
+	}
+	.info-boxes{
+		width: 80%;
+		margin-left: 10%;
+	}
+	.flex-b .link{
+		left: 28%;
+	}
 }
