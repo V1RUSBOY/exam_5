@@ -401,10 +401,10 @@ body{
 	.services-block li{
 		margin: 10px 0 0 0;
 	}
-	.services-block li:before{
-		content: "\68";
+	.services-block li span{
 		display: inline-block;
 		margin: 0 11px 0 0;
+		color: #e1524b;
 	}
 	.data-block{
 		width: 48%;
@@ -528,8 +528,7 @@ body{
 	margin: 27px 0 0 0;
 	list-style: none;
 }
-.bl-2 ul li:before{
-	content: "\69";
+.bl-2 ul li span{
 	margin: 0 12px 0 0;
 	display: inline-block;
 }
