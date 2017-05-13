@@ -90,6 +90,7 @@ body{
 	border-color: transparent transparent #e2534b transparent;
 }
 .s-menu{
+	display: none;
 	position: absolute;
 	top: 38px;
 	left: 295px;
@@ -170,9 +171,10 @@ body{
 	.slick-prev{
 		font-size: 0px;
 		left: 0;
-		display: block !important;
+		display: block;
 		border-top-right-radius: 5px;
 		border-bottom-right-radius: 5px;
+		z-index: 10000;
 	} 
 	.slick-prev::before{
 		content: "\62";
@@ -308,21 +310,25 @@ body{
 		display: block;
 		color: #62bdbd;
 		font-size: 60px;
+		margin: 0 0 -8px 0;
 	}
 	.icon-key{
 		display: block;
 		color: #62bdbd;
 		font-size: 60px;
+		margin: 0 0 -8px 0;
 	}
 	.icon-flag{
 		display: block;
 		color: #62bdbd;
 		font-size: 60px;
+		margin: 0 0 -8px 0;
 	}
 	.icon-flask{
 		display: block;
 		color: #62bdbd;
 		font-size: 60px;
+		margin: 0 0 -8px 0;
 	}
 	.flex-b:hover .icon-thumbs-o-up{
 		color: #e2534b;
@@ -339,6 +345,11 @@ body{
 	.flex-b:hover .link{
 		background: #e8645a;
 		border-color: #e2534b;
+	}
+	.flex-b p{
+		margin: 30px 0 0 0;
+		padding: 0 12px;
+		line-height: 20px;
 	}
 	.content-block{
 		background: #ececec;
